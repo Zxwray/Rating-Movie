@@ -1,4 +1,4 @@
-package pertemuan6_c;
+package WDMGANTENG;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -27,7 +27,7 @@ public class Connector {
         }
     }
 
-    public boolean tambahData(String Judul, double Alur, double Penokohan, double Akting) throws SQLException {
+    public boolean tambahData(String Judul,  double Alur, double Penokohan, double Akting) throws SQLException {
         try {
             if(Judul.isEmpty()) throw new Exception("Judul Kosong");
             if(Alur < 0 || Alur > 5) throw new Exception("Nilai Alur harus 0-5");

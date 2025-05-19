@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package pertemuan6_c;
+package WDMGANTENG;
 
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
@@ -308,17 +308,15 @@ public class Movie extends javax.swing.JFrame {
         String Judul = jTextFieldJudul.getText();
         double Alur = Double.parseDouble(jTextFieldAlur.getText());
         double Penokohan = Double.parseDouble(jTextFieldPenokohan.getText());
-        double Akting = Double.parseDouble(jTextFieldAkting.getText());
+        double Akting = Double.parseDouble(jTextFieldAkting.getText());    
         try {
             boolean isSuccess = conn.tambahData(Judul, Alur, Penokohan, Akting);
             if (isSuccess) {
                 JOptionPane.showMessageDialog(this, "Input Berhasil", "Alert", HEIGHT);
                 loadData();
                 clearForm();
-            } else {
-                JOptionPane.showMessageDialog(this, "Input Gagal", "Alert", HEIGHT);
-            }
-        } catch (SQLException ex) {
+            } 
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Gagal menambahkan: " + ex.getMessage());
         }
     }//GEN-LAST:event_jButtonTambahActionPerformed
