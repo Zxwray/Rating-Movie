@@ -233,7 +233,7 @@ public class Movie extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
     private void jTextFieldJudulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldJudulActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldJudulActionPerformed
@@ -250,6 +250,7 @@ public class Movie extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldAktingActionPerformed
     
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
     private void ButtonUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonUpdateActionPerformed
         // TODO add your handling code here:
         int selectedRow = jTable1.getSelectedRow();
@@ -293,7 +294,7 @@ public class Movie extends javax.swing.JFrame {
         jTextFieldAkting.setText("");
         jTable1.clearSelection();
     }
-    
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
         int selectedRow = jTable1.getSelectedRow();
@@ -320,7 +321,7 @@ public class Movie extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Gagal menambahkan: " + ex.getMessage());
         }
     }//GEN-LAST:event_jButtonTambahActionPerformed
-
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
         // TODO add your handling code here:
         clearForm();
@@ -376,7 +377,7 @@ public class Movie extends javax.swing.JFrame {
             tableModel.addColumn("Penokohan");
             tableModel.addColumn("Akting");
             tableModel.addColumn("Nilai");
-
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String Judul = resultSet.getString("Judul");

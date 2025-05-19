@@ -63,7 +63,7 @@ public class Connector {
             return false;
         }
     }
-
+/*WATERMARK TERSEMBUNYI PUNYA DIMAS07 TAMPAN WLEE*/
     public boolean editData(int id, String Judul, double Alur, double Penokohan, double Akting) {
         try {
             double Nilai = (Alur + Penokohan + Akting) / 3;
